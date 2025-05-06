@@ -175,7 +175,7 @@ def calculate_survival_probabilities(outcome_file, output_file):
     # Create a dictionary to store survival probabilities for each outcome
     survival_probabilities_dict = {}
 
-    for outcome in MACE_OUTCOME_CODES.keys():
+    for outcome in OUTCOME_CODES.keys():
         try:
             # Extract relevant columns for the current outcome
             users_outcome = users[['patient_id', f"{outcome}", f"days_to_{outcome}"]]
